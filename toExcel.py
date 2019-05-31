@@ -24,7 +24,6 @@ heading.append('Overall_score')
 with open('data.csv', 'a') as file:
     writer = csv.writer(file)
     writer.writerow(heading)
-    writer.writerow(" ")
     file.close()
 for item in data['name']:
     li = []
@@ -40,6 +39,5 @@ for item in data['name']:
     with open('data.csv' , 'a') as file:
         writer = csv.writer(file)
         writer.writerow(li)
-        writer.writerow(" ")
         file.close()
 
